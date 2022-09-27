@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8EDE3;
+}
+
+nav {
+    font-size: 1.3em;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.7);}
+
+.btn-group > .btn:nth-child(1) {
+    background-color: #121212;
+    color: #fff;
+}
+
+.btn-group > .btn:nth-child(2) {
+    background-color: #fff;
+    color: #121212;
+}
+
+.carousel {
+    overflow: hidden;
+    margin: 110px auto 40px;
+    width: 88vw;
+    border-radius: 30px;
+}
+
+.carousel > button span:nth-child(1){
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 20px 20px;
+    transform: translateY(160px);
+    opacity: 0;
+    transition: .8s ease-out;
+}
+
+.carousel-control-prev:hover ~ .carousel > button span:nth-child(1){
+    transform: translateY(-140px);
+}
+
+.carousel:hover .carousel-control-prev-icon, .carousel:hover .carousel-control-next-icon{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#shop{
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.5);
+}
+
+.row{
+    margin: 40px auto 40px;
+}
+
+.card{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.7);
+}
+
+.section1{
+    width: 95%;
+    height: 400px;
+    border: 1px solid;
+    border-radius: 50px;
+    margin: 50px auto;
+}
