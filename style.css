@@ -62,11 +62,3 @@ nav {
 .card{
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.7);
 }
-
-.section1{
-    width: 95%;
-    height: 400px;
-    border: 1px solid;
-    border-radius: 50px;
-    margin: 50px auto;
-}
