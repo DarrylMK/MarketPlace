@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6)
+    background: linear-gradient(155deg, #22ff00, #dddddd)
 }
 
 .container{
@@ -35,7 +35,7 @@ body {
     bottom: 0;
     height: 3px;
     width: 50px;
-    background: linear-gradient(135deg, #71b7e6, #9d59b6);
+    background: linear-gradient(155deg, #22ff00, #dddddd)
 }
 
 .container form .user-details{
@@ -104,7 +104,7 @@ form .gender-details .category{
 #dot-2:checked ~ .category label .two,
 #dot-3:checked ~ .category label .three{
     border-color: #d9d9d9;
-    background: #71b7e6;
+    background: #22ff00;
 }
 
 form input[type="radio"]{
@@ -126,11 +126,11 @@ form .button input{
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(155deg, #22ff00, #dddddd)
 }
 
 form .button input:hover{
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(155deg, #22ff00, #dddddd)
 }
 
 @media (max-width: 584px) {
