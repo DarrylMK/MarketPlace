@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Product Page</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" href="productstyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><h1>MarketPlace</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <input class="form-control mt-3 my-sm-0 ml-2 " type="search" placeholder="Search" aria-label="Search">  
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-outline-dark my-2 my-sm-0 ml-2" type="submit">Search</button>
+                </li>
+              </ul>
+              <span class="navbar-button">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn">Sign Up</button>
+                    <button type="button" class="btn">Sign In</button>
+                </div>
+              </span>
+            </div>
+      </nav>
+    
+      
+      <main class="product-page">
+
+            <div class="product-image">
+                  <img src="productimage.jpg" width="120px" height="300px"alt="ProductImage">
+            </div>
+
+            <div class="product-desc">
+                  <div class="product-name">
+                    <h1>Keyboard</h1>
+                    <div class="rating">
+                      4.9 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div style="font-size:30px">
+                      Rp 99.999
+                    </div>
+                  </div>
+                  <div class="product-detail">
+                    <div class="container">
+                      <div class="warna-container">
+                        <label>Warna</label>
+                          <button class="variation">Hitam</button>
+                          <button class="variation">Putih</button>
+                      </div>
+                      <div class="size-container">
+                        <label>Size</label>
+                        <button class="variation">TKL</button>
+                        <button class="variation">Full</button>
+                      </div>
+                      <div class="courier-container">
+                        <label>Pengiriman</label>
+                        <button class="variation">Gojek</button>
+                        <button class="variation">JNE</button>
+                        <button class="variation">Grab</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="addtocart">
+                        <a href="#" class="cart-button">Add to cart</a>
+                  </div>
+
+            </div>
+      </main>
+
+
+</body>
+</html>
