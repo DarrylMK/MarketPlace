@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(155deg, #22ff00, #dddddd)
+    background: linear-gradient(155deg, #22ff00, #dddddd) /* background colour page sign-up */
 }
 
 .container{
@@ -35,7 +35,7 @@ body {
     bottom: 0;
     height: 3px;
     width: 50px;
-    background: linear-gradient(155deg, #22ff00, #dddddd)
+    background: linear-gradient(155deg, #22ff00, #dddddd) /* colours the line below div class' title */
 }
 
 .container form .user-details{
@@ -104,7 +104,7 @@ form .gender-details .category{
 #dot-2:checked ~ .category label .two,
 #dot-3:checked ~ .category label .three{
     border-color: #d9d9d9;
-    background: #22ff00;
+    background: #22ff00; /* colours the dot beside each gender available */
 }
 
 form input[type="radio"]{
@@ -126,11 +126,11 @@ form .button input{
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(155deg, #22ff00, #dddddd)
+    background: linear-gradient(155deg, #dddddd, #dddddd) /* colours the "Sign Up" button */
 }
 
 form .button input:hover{
-    background: linear-gradient(155deg, #22ff00, #dddddd)
+    background: linear-gradient(155deg, #22ff00, #dddddd) /* changes the colour of the button when being hovered to */
 }
 
 @media (max-width: 584px) {
