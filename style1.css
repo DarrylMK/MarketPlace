@@ -14,6 +14,10 @@ body {
     background: linear-gradient(155deg, #22ff00, #dddddd) /* background colour page sign-up */
 }
 
+.close {
+    display: none;
+}
+
 .container{
     max-width: 700px;
     width: 100%;
@@ -81,7 +85,7 @@ form .gender-details .gender-title{
 form .gender-details .category{
     display: flex;
     width: 80%;
-    margin: 14px 0;
+    margin: 14px 0 ;
     justify-content: space-between;
 }
 
@@ -126,11 +130,31 @@ form .button input{
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
+    cursor: pointer;
     background: linear-gradient(155deg, #dddddd, #dddddd) /* colours the "Sign Up" button */
 }
 
 form .button input:hover{
     background: linear-gradient(155deg, #22ff00, #dddddd) /* changes the colour of the button when being hovered to */
+}
+
+.container button {
+    height: 7%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(155deg, #22ff00, #dddddd);
+    cursor: pointer;
+}
+
+.input-box small {
+    color: rgb(226, 4, 4);
+    margin-left: 5px;
 }
 
 @media (max-width: 584px) {
