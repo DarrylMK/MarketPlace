@@ -10,10 +10,8 @@
 </head>
 <body>
 
-    
-
     <a href="index.html" style="position: relative; top: -10px; left: 20px; background-color: #fff; border-radius: 50%;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#22ff00" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
         </svg>
     </a>
@@ -37,14 +35,14 @@
                 <div class="input-box">
                     <span class="details">Phone Number</span>
                     <input type="text" placeholder="Enter your phone number" required>
-                </div> 
+                </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" placeholder="Enter your password" required>
+                    <input class="password" type="password" placeholder="Enter your password" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Confirm Password</span>
-                    <input type="password" placeholder="Re-enter your password" required>
+                    <input class="confirmPassword" type="password" placeholder="Re-enter your password" required>
                 </div> 
             </div>
             <div class="gender-details">
@@ -86,23 +84,41 @@
                 <div class="input-box">
                     <span class="details">Password</span>
                     <input type="password" placeholder="Enter your password" required>
-                    <small>Lupa Password?<a href="#">Butuh Bantuan</a></small>
+                    <small>Forgotten your password?<br><a href="#">Click here to reset your password</a></small>
                 </div>
             </div>
             <div class="button">
                 <input type="submit" value="Log In">
             </div>
+            <button onclick="changeContainer()">Sign Up</button>
         </form>
-        <button onclick="changeContainer()">Sign Up</button>
     </div>
 
     <script>
+        document.querySelector('.input-box', '.button').onclick = function() { /* Password Validation */
+            var password = document.querySelector('.password').value,
+                confirmPassword = document.querySelector('.confirmPassword').value;
+
+                if (password == "") {
+                    alert("Field can't be empty. Please fill out all of the datas required.")
+                }
+                else if (password == confirmPassword) {
+                    alert("Account created successfully!")
+                    return true
+                }
+                else if (password != confirmPassword) {
+                    alert("Passwords didn't match. Please recheck if you made any mistakes.")
+                }
+                return false
+        }
+
         const signup = document.getElementById('signup')
         const signin = document.getElementById('signin')
         const changeContainer = () => {
             signup.classList.toggle('close')
             signin.classList.toggle('close')
         }
+
     </script>
 </body>
 </html>
