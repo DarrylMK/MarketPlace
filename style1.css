@@ -18,7 +18,7 @@ body {
     display: none;
 }
 
-.container{
+.container {
     max-width: 700px;
     width: 100%;
     background: #fff;
@@ -26,13 +26,13 @@ body {
     border-radius: 5px;
 }
 
-.container .title{
+.container .title {
     font-size: 25px;
     font-weight: 500;
     position: relative;
 }
 
-.container .title::before{
+.container .title::before {
     content: '';
     position: absolute;
     left: 0;
@@ -42,25 +42,25 @@ body {
     background: linear-gradient(155deg, #22ff00, #dddddd) /* colours the line below div class' title */
 }
 
-.container form .user-details{
+.container form .user-details {
     margin: 20px 0 12px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-form .user-details .input-box{
+form .user-details .input-box {
     margin-bottom: 15px;
     width: calc(100% / 2 - 20px);
 }
 
-.user-details .input-box .details{
+.user-details .input-box .details {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.user-details .input-box input{
+.user-details .input-box input {
     height: 45px;
     width: 100%;
     outline: none;
@@ -73,28 +73,28 @@ form .user-details .input-box{
 }
 
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:valid {
     border-color: #9b9b9b;
 }
 
-form .gender-details .gender-title{
+form .gender-details .gender-title {
     font-size: 20px;
     font-weight: 500;
 }
 
-form .gender-details .category{
+form .gender-details .category {
     display: flex;
     width: 80%;
     margin: 14px 0 ;
     justify-content: space-between;
 }
 
-.gender-details .category label{
+.gender-details .category label {
     display: flex;
     align-items: center;
 }
 
-.gender-details .category .dot{
+.gender-details .category .dot {
     height: 18px;
     width: 18px;
     background: #d9d9d9;
@@ -106,21 +106,21 @@ form .gender-details .category{
 
 #dot-1:checked ~ .category label .one,
 #dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three{
+#dot-3:checked ~ .category label .three {
     border-color: #d9d9d9;
     background: #22ff00; /* colours the dot beside each gender available */
 }
 
-form input[type="radio"]{
+form input[type="radio"] {
     display: none;
 }
 
-form .button{
+form .button {
     height: 45px;
     margin: 45px 0;
 }
 
-form .button input{
+form .button input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -134,7 +134,7 @@ form .button input{
     background: linear-gradient(155deg, #dddddd, #dddddd) /* colours the "Sign Up" button */
 }
 
-form .button input:hover{
+form .button input:hover {
     background: linear-gradient(155deg, #22ff00, #dddddd) /* changes the colour of the button when being hovered to */
 }
 
