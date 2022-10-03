@@ -46,7 +46,8 @@
       display:flex;
       flex-direction: column;
   }
-  .warna-container{
+  .variation {
+    border-radius: 10px;
   }
 
   .addtocart{
@@ -67,4 +68,5 @@
 
 .cart-button:hover {
       background-color: white;
+      text-decoration: none;
     }
