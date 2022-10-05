@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -11,7 +10,7 @@ body {
 
 nav {
     font-size: 1.3em;
-    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.7);}
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);}
 
 .btn-group > .btn:nth-child(1) {
     background-color: #121212;
@@ -25,7 +24,7 @@ nav {
 
 .carousel {
     overflow: hidden;
-    margin: 40px auto 40px;
+    margin: 140px auto 40px;
     width: 88vw;
     border-radius: 30px;
 }
