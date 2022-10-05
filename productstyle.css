@@ -1,6 +1,12 @@
+body {
+    background-color: #F8EDE3;
+
+}
+
 nav {
     font-size: 1.3em;
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);}
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+}
 
 .product-page{
       max-width: 1200px;
@@ -72,5 +78,6 @@ nav {
 
 .cart-button:hover {
       background-color: white;
+      color: black;
       text-decoration: none;
     }
