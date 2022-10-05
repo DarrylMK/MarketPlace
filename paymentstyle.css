@@ -1,0 +1,223 @@
+.container{
+      max-width: 1080px;
+      margin: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 120px;
+}
+ul, li {
+      margin: 0;
+      padding: 0;
+      
+}
+
+.payment-page{
+      margin: auto 40px;
+}
+
+textarea{
+      border: none;
+      width: 420px;
+      height: 150px;
+}
+
+textarea:focus{
+      outline:none;
+}
+
+input{
+      border:none;
+}
+
+input:focus{
+      outline:none;
+}
+
+table{
+      width: 80%;
+      border-collapse: collapse;
+      margin:auto;
+}
+
+.cart{
+      display: flex;
+      flex-wrap:wrap ;
+      width: 51%;
+      align-items: center;
+      height: 120px;
+      padding-top: 17px; 
+}
+
+th{
+      text-align: center;
+      padding:5px;
+      color: white;
+      background:green;
+}
+
+td{
+      text-align: center;
+      border-bottom:solid 1px black;
+}
+
+td input{
+      width:50px;
+      height: 20px;
+      padding:1px;
+      text-align: center;
+}
+
+td a{
+      color:green;
+      font-size:17px;
+}
+
+.image{
+      width: 49%;
+      float: left;
+      padding-top: 12px;  
+}
+
+.cart a{
+      width:50%;
+      float:left; 
+}
+
+td img{
+      width:  49%;
+      height: 100px;
+
+}
+
+p{
+      width : 49%;
+      align-items: center;
+}
+
+.headeralamat{
+      margin-left:140px;
+      margin-top:20px;
+      background-color: green;
+      color:white;
+      padding:5px;
+      padding-left:40px;
+      width: 80%;
+      border-collapse: collapse;
+      margin:auto;
+}
+
+.form-alamat{   
+      max-width: 1080px;
+      margin: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 10px;
+      border-bottom:solid 1px black;
+}
+
+
+.form-container{
+      position: relative;
+      padding: 15px;
+      width: 80%;
+}
+
+.nama-nohp{
+      display: flex;
+      width:100%;
+      margin-bottom: 20px;
+}
+
+.form{
+    position: relative;
+    width: 200px;
+    border: solid 2px green;
+    margin-bottom: 20px;
+}
+
+.divrow{
+      display: flex;
+      width:100%;
+}
+.alamat{
+      position: relative;
+      width: 425px;
+      border: solid 2px green;
+}
+
+.submit{
+      padding-left: 360px;
+}
+
+.submitalamat{
+      background-color: green;
+      color:white;
+}
+
+.form-payment{
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 20px;
+      margin-left:200px;
+      border-bottom:solid 1px black;
+      display: flex;
+}
+
+.selector{
+      width:435px;
+}
+      
+#selectfield{
+      width:100%;
+      height: 40px;
+      box-sizing: border-box;
+      background-color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+}
+
+#selectfield p{
+      text-align: center;
+}
+
+#selectfield svg{
+      width: 12px;
+      margin-right: 15px;
+      float:right;
+}
+
+#list{
+      width:100%;
+      background:(255,255,255,0.7);
+      overflow: hidden;
+}
+
+.option{
+      width: 100%;
+      padding: 15px 0 15px 70px;
+      cursor: pointer;
+      box-sizing: border-box;
+      position: relative;
+      border-bottom: solid 0.2px black;
+}
+
+.option img{
+      width: 80px;
+      position: absolute;
+      top:30px;
+      left: 25px;
+      height:25px;
+}
+
+.option p{
+      margin-left: 50px;
+      margin-top: 15px;
+}
+
+.option:hover{
+      background-color: bisque;
+}
+
+
