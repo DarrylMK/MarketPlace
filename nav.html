@@ -1,19 +1,19 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" style="font-size:45px" href="index.html">Marketplace</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="shop.html">Shop</a>
+          <a class="nav-link" href="index.html#featureContainer">Shop</a>
         </li>
         <li>
-          <a class="nav-link" href="help.html">Help</a>
+          <a class="nav-link" href="FAQ.html">Help</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,16 +25,15 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <form class="d-flex ps-2" role="search">
+        <form class="d-flex" role="search">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark" type="submit">Search</button>
         </form>
       </ul>
-
-      <div>
-          <button class="btn btn-outline-dark"><a href="signup.html">Sign Up</a></button>
-          <button class="btn btn-outline-dark"><a href="signup.html">Login</a></button>
-      </div>
+      
+      <span class="navbar-text">
+          <button class="btn btn-outline-dark"><a  style="color:inherit; text-decoration:none; font-weight:500;" href="signup.html">Login/Register</a></button>
+      </span>
 
     </div>
   </div>
