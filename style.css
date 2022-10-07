@@ -43,6 +43,7 @@ nav {
 .carousel:hover .carousel-control-prev-icon, .carousel:hover .carousel-control-next-icon{
     transform: translateY(0px);
     opacity: 1;
+    
 }
 
 
