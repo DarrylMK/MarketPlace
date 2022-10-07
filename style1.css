@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(155deg, #22ff00, #dddddd) /* background colour page sign-up */
+    background-image: url(backgroundsign.png); /* background colour page sign-up */
 }
 
 .close {
@@ -39,7 +39,7 @@ body {
     bottom: -5;
     height: 3px;
     width: 50px;
-    background: linear-gradient(155deg, #22ff00, #dddddd) /* colours the line below div class' title */
+    background: linear-gradient(155deg, #000, #dddddd) /* colours the line below div class' title */
 }
 
 .container form .user-details {
@@ -108,7 +108,7 @@ form .gender-details .category {
 #dot-2:checked ~ .category label .two,
 #dot-3:checked ~ .category label .three {
     border-color: #d9d9d9;
-    background: #22ff00; /* colours the dot beside each gender available */
+    background: #000; /* colours the dot beside each gender available */
 }
 
 form input[type="radio"] {
@@ -131,11 +131,11 @@ form .button input {
     border-radius: 5px;
     letter-spacing: 1px;
     cursor: pointer;
-    background: linear-gradient(155deg, #dddddd, #dddddd) /* colours the "Sign Up" button */
+    background:#dddddd /* colours the "Sign Up" button */
 }
 
 form .button input:hover {
-    background: linear-gradient(155deg, #22ff00, #dddddd) /* changes the colour of the button when being hovered to */
+    background:#000 /* changes the colour of the button when being hovered to */
 }
 
 .container button {
@@ -148,58 +148,9 @@ form .button input:hover {
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(155deg, #22ff00, #dddddd);
+    background: #000;
     cursor: pointer;
 }
-
-.popup .overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    display: none;
-}
-
-.popup .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height: 220px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.popup .close-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup.active .overlay {
-    display: block;
-}
-
-.popup.active .content {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
 
 .input-box small {
     color: rgb(226, 4, 4);
