@@ -5,12 +5,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F8EDE3;
+    background-color: white;
 }
-
-nav {
-    font-size: 1.3em;
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);}
 
 .btn-group > .btn:nth-child(1) {
     background-color: #121212;
@@ -185,3 +181,61 @@ nav {
   #featureContainer .indicator.w-aut {
     left: 94.5%;
   }
+
+footer {
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+  background-color: #fff;
+  display: flex;
+  font-size: .97em;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid black;
+  padding-left: 80px;
+}
+
+.footerCol .bi {
+  height: 25px;
+  width: 25px;
+  color: rgba(49,53,59,0.68);
+}
+
+.footerTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footerCol ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footerCol ul li {
+  margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+  color: rgba(49,53,59,0.68);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerCol ul li:hover a, .footerCol .bi:hover{
+  color: black;
+}
+
+.socialMedia li{
+  float: left;
+  margin-right: 20px;
+}
