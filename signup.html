@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Sign-Up Form</title>
@@ -6,14 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    
-    <a href="index.html" style="position: relative; top: -10px; left: 20px; background-color: #fff; border-radius: 50%;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#22ff00" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+
+    <a href="index.html"
+        style="position: relative; top: -10px; left: 20px; background-color: #fff; border-radius: 50%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="000" class="bi bi-arrow-left-circle"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
         </svg>
     </a>
     <div id="signup" class="container close">
@@ -22,19 +28,19 @@
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
-                    <input type="text" placeholder="Enter your name" required>
+                    <input type="text" class="name" placeholder="Enter your name" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username" required>
+                    <input type="text" class="username" placeholder="Enter your username" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email" required>
+                    <input type="text" class="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your phone number" required>
+                    <input type="text" class="no" placeholder="Enter your phone number" required>
                 </div>
                 <div class="input-box" style="position: relative">
                     <span class="details">Password</span>
@@ -42,16 +48,18 @@
                 </div>
                 <div class="input-box" style="position: relative">
                     <span class="details">Confirm Password</span>
-                    <input class="confirmPassword" type="password" id="confirmPw" placeholder="Re-enter your password" required>
-                    <i class="fa fa-eye-slash show-password" style="position: absolute; top: 50%; left: 100%; transform: translate(-150%,20%)"></i>
+                    <input class="confirmPassword" type="password" id="confirmPw" placeholder="Re-enter your password"
+                        required>
+                    <i class="fa fa-eye-slash show-password"
+                        style="position: absolute; top: 50%; left: 100%; transform: translate(-150%,20%)"></i>
                     <small id="errorPw" style="position: absolute; display: flex"></small>
-                </div> 
+                </div>
             </div>
             <div class="gender-details">
                 <input type="radio">
                 <input type="radio" name="gender" id="dot-1">
                 <input type="radio" name="gender" id="dot-2">
-                <input type="radio" name="gender" id="dot-3">
+                <input type="radio" name="gender" id="dot-3" checked>
                 <span class="gender-title">Gender</span>
                 <div class="category">
                     <label for="dot-1">
@@ -86,8 +94,8 @@
                 <div class="input-box" style="position: relative">
                     <span class="details">Password</span>
                     <input type="password" id="pW" placeholder="Enter your password" required>
-                    <i class="fa fa-eye-slash show-pass" style="position: absolute; top: 38%; left: 90%"></i>
-                    <small>Forgotten your password?<br><a href="#" style="margin-left: 5px">Click here to reset your password</a></small>
+                    <i class="fa fa-eye-slash show-pass" style="position: absolute; top: 44.5%; left: 90%"></i>
+                    <small>Forgotten your password?<a href="forgotpw.html" style="margin-left: 5px">Click here</a></small>
                 </div>
             </div>
             <div class="button">
@@ -97,42 +105,36 @@
         <button onclick="changeContainer()">Sign Up</button>
     </div>
 
-    <div id="pop" class="popup">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="close-btn" onclick="togglePopup()">&times;</div>
-            <h1>Test</h1>
-            <p>Your account has successfully been created!</p>
-        </div>
-    </div>
-    <button onclick="togglePopup()">Show popup</button>
-
     <script>
 
-        const showPassword = document.querySelector(".show-password"), 
+        const showPassword = document.querySelector(".show-password"),
             showPass = document.querySelector(".show-pass"),
             createPw = document.querySelector("#createPw"),
             confirmPw = document.querySelector("#confirmPw"),
             pW = document.querySelector("#pW"),
-            userDetails = document.querySelector(".user-details"),
+            name = document.querySelector(".name"),
+            userName = document.querySelector(".username"),
+            eMail = document.querySelector(".email"),
+            number = document.querySelector(".no"),
             message = document.querySelector("#errorPw");
 
         /* Password Validation */
-        document.querySelector('.button').onclick = function() {
-            if (createPw.value.length != 0) {
-                if (createPw.value == confirmPw.value) {
-                    message.textContent = "Passwords match";
-                    message.style.color = "#3ae374";
-                }
-                else {
-                    message.textContent = "Passwords don't match";
-                    message.style.color = "ff4d4d";
+        document.querySelector('.button').onclick = function () {
+            message.textContent = "";
+            if ((name.value != "") && (userName.value != "") && (eMail.value != "") && (number.value != "")
+                && (createPw.value != "") && (confirmPw.value != "")) {
+                if (createPw.value.length != 0) {
+                    if (createPw.value == confirmPw.value) {
+                        
+                        alert("Your account has successfully been created!")
+                    }
+                    else {
+                        message.textContent = "Passwords don't match";
+                        message.style.color = "ff4d4d";
+                    }
                 }
             }
-            else {
-                alert("Password can't be empty!");
-                message.textContent = "";
-            }
+
         }
 
         /* Reveals and hides password by clicking on the eye icon */
@@ -148,7 +150,7 @@
         });
 
         showPassword.addEventListener("click", () => {
-            if((createPw.type === "password") && (confirmPw.type === "password")) {
+            if ((createPw.type === "password") && (confirmPw.type === "password")) {
                 createPw.type = "text";
                 confirmPw.type = "text";
                 showPassword.classList.replace("fa-eye-slash", "fa-eye");
@@ -160,10 +162,6 @@
             }
         });
 
-        function togglePopup() {
-            document.getElementById("pop").classList.toggle("active");
-        }
-
         /* Swaps both containers when Sign Up or Log In button is clicked */
         const signup = document.getElementById('signup')
         const signin = document.getElementById('signin')
@@ -173,5 +171,7 @@
         }
 
     </script>
+
 </body>
+
 </html>
