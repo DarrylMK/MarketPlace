@@ -25,7 +25,7 @@
     
     <div id="signup" class="container close">
         <div class="title">Sign-Up!</div>
-        <form action="#">
+        <form id="form" action="#">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="text" class="email" placeholder="Enter your email" required>
+                    <input type="text" class="email" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
@@ -96,7 +96,7 @@
                     <span class="details">Password</span>
                     <input type="password" id="pW" placeholder="Enter your password" required>
                     <i class="fa fa-eye-slash show-pass" style="position: absolute; top: 44.5%; left: 90%"></i>
-                    <small>Forgotten your password?<a href="forgotpw.html" style="margin-left: 5px">Click here</a></small>
+                    <small>Forgotten your password?<a href="forgotpw.html" style="margin-left: 5px">Click here!</a></small>
                 </div>
             </div>
             <div class="button">
@@ -119,6 +119,31 @@
             number = document.querySelector(".no"),
             message = document.querySelector("#errorPw");
 
+        function emailValidation() {
+            var form = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (email.match(pattern)) {
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = "Your email address is valid."
+                text.style.color = "#00ff00";
+            }
+            else {
+                form.classList.remove("valid");
+                form.classList.add("invalid");
+                text.innerHTML = "Your email address is invalid."
+                text.style.color = "#ff0000";
+            }
+            if (email == "") {
+                form.classList.remove("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = "";
+                text.style.color = "#00ff00";
+            }
+        }
+
         /* Password Validation */
         document.querySelector('.button').onclick = function () {
             message.textContent = "";
@@ -127,10 +152,12 @@
                 if (createPw.value.length != 0) {
                     if (createPw.value == confirmPw.value) {
                         alert("Your account has successfully been created!")
+                        changeContainer();
                     }
                     else {
-                        message.textContent = "Passwords don't match";
+                        message.textContent = "Passwords don't match!";
                         message.style.color = "ff4d4d";
+                        alert("Passwords don't match, account creation failed. Please recheck if there's any mistakes.")
                     }
                 }
             }

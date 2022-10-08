@@ -39,7 +39,7 @@ body {
     bottom: -5;
     height: 3px;
     width: 50px;
-    background: linear-gradient(155deg, #000, #dddddd) /* colours the line below div class' title */
+    background: linear-gradient(155deg, #000, #dddddd) /* colours the line below Sign In! and Sign Up! */
 }
 
 .container form .user-details {
