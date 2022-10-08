@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    padding-inline: 40px;
+    height: 150px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    margin-top: 160px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profilePic {
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.profilePic img {
+    height: 100%;
+}
+
+.profileDetails {
+    width: 40%;
+    height: 80%;
+    padding: 10px 20px;
+    border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.profileName, .rating {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.profileStatus {
+    text-transform: capitalize;
+}
+
+.profileStatus .lastOnline{
+    font-size: .9em;
+    color: rgba(0,0,0,0.5);
+}
+
+.rating span, .rating .bi{
+    font-size: 1.3em;
+}
