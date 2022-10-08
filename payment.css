@@ -4,6 +4,7 @@
 
 .addressheader{
       margin-top: 160px;
+      border-radius: 6px;
 }
 .headertext{
       width: 80%;
@@ -11,6 +12,7 @@
       padding: 7px;
       padding-left: 40px;
       background-color: black;
+      border-radius: 6px;
 }
 .headertext h1{
       font-size: 40px;
@@ -105,6 +107,7 @@ input:focus{
       padding-left:15px;
       padding-right:15px;
       margin-top: 12px;
+      border-radius: 6px;
 }
 
 .submit input:hover{
