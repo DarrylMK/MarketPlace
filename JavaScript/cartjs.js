@@ -33,7 +33,7 @@ for (let i = 0; i < incrementBtn.length; i++) {
   
   }
 
-  const totalCalc = function () {
+const totalCalc = function () {
 
    let subtotal = 0;
    let total = 0;
@@ -53,3 +53,9 @@ for (let i = 0; i < incrementBtn.length; i++) {
    payAmountBtn.textContent = total.toFixed(2);
 
    }
+
+   
+const div = document.getElementById('product')
+div.addEventListener('click', function handleClick(event) {
+  div.remove();
+});

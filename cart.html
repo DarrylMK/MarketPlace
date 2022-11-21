@@ -29,26 +29,32 @@
 	<h1>Shopping Cart</h1>
 	<div class="cart">
 		<div class="products">
-			<div class="product">
+
+			<div class="product" id="product">
 				<img src="./images/homeproductpic/P2.png">
 				<div class="product-info">
 					<h3 class="product-name">Mouse</h3>
 					<h4 class="product-price">Rp <span id="harga">300000.00</span></h4>
           <div class="product-quantity">
             <button id="decrement" class="minus">
-              <i class="fa fa-minus-circle" aria-hidden="true"></i>            </button>
+              <i class="fa fa-minus-circle" aria-hidden="true"></i>            
+            </button>
 
               <span id="quantity">1</span>
 
             <button id="increment" class="plus">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>            </button>
-          </div>					<p class="product-remove">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>            
+            </button>
+          </div>					
+          
+          <p class="product-remove">
 						<i class="fa fa-trash" aria-hidden="true"></i>
 						<span class="remove">Remove</span>
 					</p>
 				</div>
 			</div>
-      <div class="product">
+      
+      <div class="product" id="product">
 				<img src="productimage.jpg">
 				<div class="product-info">
 					<h3 class="product-name">Keyboard</h3>
@@ -64,6 +70,7 @@
               <i class="fa fa-plus-circle" aria-hidden="true"></i>            
             </button>
           </div>
+
 					<p class="product-remove">
 						<i class="fa fa-trash" aria-hidden="true"></i>
 						<span class="remove">Remove</span>
@@ -71,8 +78,8 @@
 				</div>
 			</div>
 			
-			<div class="product">
-				<img src="./images/homeproductpic/P2.png">
+			<div class="product" id="product">
+				<img src="./images/homeproductpic/P3.png">
 				<div class="product-info">
 					<h3 class="product-name">Mouse</h3>
 					<h4 class="product-price">Rp <span id="harga">100000.00</span> </h4>
@@ -86,7 +93,9 @@
             <button id="increment" class="plus">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>            
             </button>
-          </div>					<p class="product-remove">
+          </div>					
+          
+          <p class="product-remove">
 						<i class="fa fa-trash" aria-hidden="true"></i>
 						<span class="remove">Remove</span>
 					</p>
@@ -179,4 +188,6 @@
 </body>
 
 <script src="./JavaScript/cartjs.js"></script>
+
+
 </html>
