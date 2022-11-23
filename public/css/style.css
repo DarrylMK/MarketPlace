@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.btn-group > .btn:nth-child(1) {
+    background-color: #121212;
+    color: #fff;
+}
+
+.btn-group > .btn:nth-child(2) {
+    background-color: #fff;
+    color: #121212;
+}
+
+.carousel {
+    overflow: hidden;
+    margin: 160px auto 40px;
+    width: 88vw;
+    border-radius: 30px;
+}
+
+.carousel > button span:nth-child(1){
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 20px 20px;
+    transform: translateY(160px);
+    opacity: 0;
+    transition: .8s ease-out;
+}
+
+.carousel:hover .carousel-control-prev-icon, .carousel:hover .carousel-control-next-icon{
+    transform: translateY(0px);
+    opacity: 1;
+    
+}
+
+.card{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.7);
+}
+
+.card-img-top {
+    height: 140px;
+    transition: .2s;
+    margin: 10px auto;
+}
+
+.card-img-top:hover {
+    transform: scale(1.3);
+}
+
+
+#featureContainer .carousel {
+    padding: 0;
+    margin: 10px 0;
+    border-radius: 0;
+}
+
+.bi {
+    color: black;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #featureContainer .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    #featureContainer .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+  
+  #featureContainer .carousel-inner .carousel-item.active,
+  #featureContainer .carousel-inner .carousel-item-next,
+  #featureContainer .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+    
+    #featureContainer .carousel-inner .carousel-item-end.active,
+    #featureContainer .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    #featureContainer .carousel-inner .carousel-item-start.active, 
+    #featureContainer .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  
+    #featureContainer .card img{
+      width: 90%;
+      height: 140px;
+    }
+  
+    #featureContainer .carousel-item{
+      justify-content: space-between;
+    }
+  
+  }
+  
+  @media (max-width: 767px) {
+    #featureContainer .card img{
+      width: 100%;
+      height: 75vh;
+    }
+  }
+  
+  #featureContainer .carousel-inner .carousel-item-end,
+  #featureContainer .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+  }
+  
+  #featureContainer .card{
+    border: 0;
+  }
+  
+  #featureContainer .card{
+    position: relative;
+  }
+  
+  #featureContainer .card .card-img-overlays{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  #featureContainer a{
+    text-decoration: none;
+  }
+  
+  #featureContainer .indicator{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+  }
+
+  #featureContainer .indicator.w-aut {
+    left: 94.5%;
+  }
+
+footer {
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+  display: flex;
+  font-size: .97em;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding-left: 80px;
+}
+
+.footerCol .bi {
+  height: 25px;
+  width: 25px;
+  color: rgba(49,53,59,0.68);
+}
+
+.footerTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footerCol ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footerCol ul li {
+  margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+  color: rgba(49,53,59,0.68);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerCol ul li:hover a, .footerCol .bi:hover{
+  color: black;
+}
+
+.socialMedia li{
+  float: left;
+  margin-right: 20px;
+}

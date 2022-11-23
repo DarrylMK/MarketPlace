@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Product Page</title>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+      />      
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      />      
+      <link rel="stylesheet" href="css/productstyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("/nav");
+  });
+  </script>
+    
+      
+      <main class="product-page">
+        <a href="/index#featureContainer" style="position: relative; top: 120px; left: -50px">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg>
+        </a>
+
+            <div class="product-image">
+                  <img src="images/homeproductpic/P3.png" width="400px" height="400px"alt="ProductImage">
+            </div>
+
+            <div class="product-desc">
+                  <div class="product-name">
+                    <h1>Razer Blackwidow</h1>
+                    <div class="rating">
+                      4.5
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>                      
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+
+                    </div>
+                    <div style="font-size:30px">
+                      Rp 99.000
+                    </div>
+                  </div>
+
+                  
+                <form>
+                  <div class="choice">
+                    <div class="product-choice">
+                      <p>Color</p>
+                      <input type="radio" id="Black" name="Color" value="Black" required>
+                      <label for="Black">Black</label>
+  
+                      <input type="radio" id="White" name="Color" value="White" required>
+                      <label for="White">White</label>
+  
+                      <input type="radio" id="Red" name="Color" value="Red" required>
+                      <label for="Red">Red</label>
+                    </div>
+
+                    <div class="product-choice">
+                      <p>Size</p>
+                      <input type="radio" id="S" name="Size" value="S" required>
+                      <label for="S">S</label>
+
+                      <input type="radio" id="M" name="Size" value="M" required>
+                      <label for="M">M</label>
+
+                    </div>
+                  </div>
+                </form>
+
+                  <div class="addtocart" id="cart">
+                        <a href="#" class="cart-button">Add to cart</a>
+                  </div>
+
+            </div>
+      </main>
+
+      <div class="divider"></div>
+
+      <div class="seller">
+        <div class="sellerpic">
+          <img src="images/seller pic1.png">
+        </div>
+
+        <div class="sellername">
+          <div class="name">
+            ABC Electronic
+          </div>
+          <div class="visit">
+            <a href="/profile" class="btn btn-dark">Visit</a>
+          </div>
+        </div>
+
+        <div class="seller-desc">
+          <div class="seller-desc-rating">
+            Rating
+            <div>
+              4.5
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>                      
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+          </div>
+
+          <div class="seller-desc-location">
+            Location
+            <div>
+              <i class="bi bi-geo-fill"></i>
+              Jakarta Utara
+            </div>
+          </div>
+
+          <div class="seller-desc-processtime">
+            Order Process Time
+            <div>
+              <i class="bi bi-clock-fill"></i>
+              2-3 Work Days
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="detail-recommend">
+        <div class="container-detail-product">
+          <div class="header-detail-product">
+            <h1>Detail</h1>
+          </div>  
+            <div class="detail-product">
+              DESIGN :<br>
+              - Top Material : High Quality Polymer Frame<br>
+              - N-Key Roll Over : 24 Keys<br>
+              - Anti-ghosting : Gaming Grade<br>
+              - Illumination : 10-Zone RGB Illumination<br>
+              - Height : 40 mm / 1.57 in<br>
+              - Width : 364 mm / 14.3 in<br>
+              - Depth : 150 mm / 5.9 in<br><br>
+
+              SWITCH :<br>
+                Type & Name : SteelSeries Whisper-Quiet Switches<br>
+                Lifetime : 20 Million Keypresses<br>
+                <br>
+              COMPABILITY :<br>
+                OS : Windows, Mac OS X, Xbox, and PS4. USB port required<br>
+            </div>
+        </div>
+        <div class="container-recommend-product">
+            <div class="header-recommend-product">
+                <h1>Recommended For You</h1>
+            <div class="recommend-product">
+                <div class="card m-3" style="width: 12rem;">
+                    <img
+                      src="images/homeproductpic/P1.png"
+                      class="card-img-top"
+                      alt="..."
+                      style="margin: 0"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="/product1" class="btn btn-dark">Lihat lebih banyak</a>
+                    </div>
+                  </div>
+                  <div class="card m-3" style="width: 12rem;">
+                      <img
+                        src="images/homeproductpic/P2.png"
+                        class="card-img-top"
+                        alt="..."
+                        style="margin: 0"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="/product2" class="btn btn-dark">Lihat lebih banyak</a>
+                      </div>
+                    </div> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <script>
+        const cart = document.getElementById('cart');
+        cart.addEventListener('click', function handleClick()  {
+        cart.textContent = 'Added to Cart';
+      });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+
+      </script>
+    </body>
+</html>
