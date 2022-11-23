@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Users = require('./user');
 
 mongoose.connect(
-  'mongodb+srv://Roberto:Roberto19@cluster0.tlyg1u3.mongodb.net/?retryWrites=true&w=majority'
+  'mongodb+srv://darryl:darryl@cluster0.pvv1bmd.mongodb.net/?retryWrites=true&w=majority'
   );
 
 const db = mongoose.connection;

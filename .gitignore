@@ -1,2 +1,3 @@
+config/.env
 
-old-index.html
+node_modules/
