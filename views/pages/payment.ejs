@@ -42,55 +42,57 @@
       <div class="container">
             <h1>Address</h1>
             <div class="form-container">
-                  <form>
+                  <form method="post" action="api/auth/shipping" >
                         <div class="divrow">
                               <div class="form">
-                                    <input type="text" placeholder="  Nama Penerima"><br>
+                                    <input type="text" placeholder="  Nama Penerima" name="NamaPenerima"><br>
                               </div>
                               <div style="width:20px;"></div>
                               <div class="form">
-                                    <input type="text" placeholder="  No Handphone"><br>
+                                    <input type="text" placeholder="  No Handphone" name="nomorTelp"><br>
                               </div>
                         </div>
 
                         <div class="divrow">
                               <div class="form">
-                                    <input type="text" placeholder="  Provinsi"><br>
+                                    <input type="text" placeholder="  Provinsi" name="Provinsi"><br>
                               </div>
                               <div style="width:20px;"></div>
                               <div class="form">
-                                    <input type="text" placeholder="  Kota"><br>
+                                    <input type="text" placeholder="  Kota" name="Kota"><br>
                               </div>
                         </div>
 
                         <div class="divrow">
                               <div class="form">
-                                    <input type="text" placeholder="  Kecamatan"><br>
+                                    <input type="text" placeholder="  Kecamatan" name="Kecamatan"><br>
                               </div>
                               <div style="width:20px;"></div>
                               <div class="form">
-                                    <input type="text" placeholder="  Kode Pos"><br>
+                                    <input type="text" placeholder="  Kode Pos" name="kodePos"><br>
                               </div>
                         </div>
                         <div class="alamat">
-                              <textarea rows="4" cols="50" placeholder="  Alamat Lengkap"></textarea>
+                              <textarea rows="4" cols="50" placeholder="  Alamat Lengkap" name="Alamat"></textarea>
                         </div>
                         <br>
-                        <div class="tag-alamat">
+                        <!-- <div class="tag-alamat">
                               Tandai Alamat Sebagai : 
                               <br>
-                              <input class="form-check-input" type="radio" name="tag" id="rumah" checked>
+                              <input class="form-check-input" type="radio" name="tag" id="rumah" checked name="Rumah">
                               <label for="Rumah">Rumah</label>
-                              <input class="form-check-input" type="radio" name="tag" id="kantor">
+                              <input class="form-check-input" type="radio" name="tag" id="kantor" name="Kantor">
                               <label for="Kantor">Kantor</label>
-                              <input class="form-check-input" type="radio" name="tag" id="lainnya">
+                              <input class="form-check-input" type="radio" name="tag" id="lainnya" name="Lainnya">
                               <label for="Lainnya">Lainnya</label>
+                        </div> -->
+                        <div class="submit" value="submit">
+                              <input class="button" type="submit" value="Submit" onclick="myFunction()">
                         </div>
-
                   </form>    
             </div>
       </div>
-
+<!-- 
       <div class="payment-page">
             <div class="paymentheader">
                   <div class="headertext">
@@ -112,7 +114,7 @@
             <h5>Payment Available</h5>
             <div class="ms-5 mt-1">
                   <div class="m-1">
-                        <input class="form-check-input" type="radio" name="payment" id="BCA">
+                        <input class="form-check-input" type="radio" name="payment" id="BCA" name="BCA">
                         <label class="form-check-label" for="BCA">
                               <img src="PaymentMethod/bca.png">
                               BCA
@@ -120,7 +122,7 @@
                   </div>
 
                   <div class="m-1">
-                        <input class="form-check-input" type="radio" name="payment" id="Mandiri">
+                        <input class="form-check-input" type="radio" name="payment" id="Mandiri" name="Mandiri">
                         <label class="form-check-label" for="Mandiri">
                               <img src="PaymentMethod/mandiri.png">
                               Mandiri
@@ -128,7 +130,7 @@
                   </div>
 
                   <div class="m-1">
-                        <input class="form-check-input" type="radio" name="payment" id="BNI">
+                        <input class="form-check-input" type="radio" name="payment" id="BNI" name="BNI">
                         <label class="form-check-label" for="BNI">
                               <img src="PaymentMethod/bni.png">
                               BNI
@@ -136,7 +138,7 @@
                   </div>
 
                   <div class="m-1">
-                        <input class="form-check-input" type="radio" name="payment" id="Alfamart">
+                        <input class="form-check-input" type="radio" name="payment" id="Alfamart" name="Alfamart">
                         <label class="form-check-label" for="Alfamart">
                               <img src="PaymentMethod/alfamart.png">
                               Alfamart
@@ -144,7 +146,7 @@
                   </div>
 
                   <div class="m-1">
-                        <input class="form-check-input" type="radio" name="payment" id="Indomaret">
+                        <input class="form-check-input" type="radio" name="payment" id="Indomaret" name="Indomaret">
                         <label class="form-check-label" for="Indomaret">
                               <img src="PaymentMethod/indomaret.png">
                               Indomaret
@@ -153,10 +155,10 @@
             </div>
 
             <div class="submit">
-                  <input class="button" type="submit" value="Submit">
+                  <input class="button" type="submit" value="Submit" onclick="myFunction()">
             </div>
       </div>
-      
+       -->
       <footer>
             <div class="footerCol">
               <div class="footerTitle">Spacetify</div>
@@ -225,6 +227,12 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
               integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
 
+      </script>
+
+      <script>
+            function myFunction() {
+            alert("Your Order Received");
+      }
       </script>
 </body>
 </html>
