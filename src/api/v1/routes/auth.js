@@ -32,7 +32,7 @@ module.exports = (app) => {
           throw new Error('Email is already registered!');
         }
         // TOD: register user (insert to db)
-        await userController.create(
+        await userController.createUser(
           req.body.email,
           req.body.full_name,
           req.body.user_name,
@@ -49,6 +49,7 @@ module.exports = (app) => {
     },
   );
 
+  //route untuk login
   route.post(
     '/login',
     celebrate(authValidator.login),
@@ -73,4 +74,30 @@ module.exports = (app) => {
       }
     },
   );
+  
+
+  route.post(
+    '/shipping',
+    async (req, res, next) => {
+      try {
+          await userController.createShipping(
+            req.body.NamaPenerima,
+            req.body.nomorTelp,
+            req.body.Provinsi,
+            req.body.Kota,
+            req.body.Kecamatan,
+            req.body.kodePos,
+            req.body.Alamat,
+            //req.body.tag,
+            //req.body.payment,
+          );
+          return res.json({
+            status:'OK!',
+          }).status(300);
+        } 
+          catch (err) {
+          return next(err);
+        }
+      },
+    )
 };
