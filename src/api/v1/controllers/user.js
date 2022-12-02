@@ -2,10 +2,12 @@
 const jwt = require('jsonwebtoken');
 
 const config = require('../../../core/config')
-const { Users } = require('../../../models')
-const { hashPassword, comparePassword } = require('../../../helpers/crypto')
+const { Users,shipping } = require('../../../models')
+const { hashPassword, comparePassword } = require('../../../helpers/crypto');
 
-async function create(email, fullName, userName, phoneNo, password) {
+async function createUser(
+  email, fullName, userName, phoneNo, password
+  ) {
   const hashedPassword = await hashPassword(password);
   const newUser = new Users({
     email,
@@ -13,11 +15,31 @@ async function create(email, fullName, userName, phoneNo, password) {
     user_name: userName,
     phone_no: phoneNo,
     password: hashedPassword,
-  });
-
+      
   // password plaintext = not secure. kalau program kena hack (database bocor) 
   // passwordnya akan kebaca jelas
+  });
+
   return newUser.save();
+
+}
+
+async function createShipping(
+  NamaPenerima, nomorTelp, Provinsi, Kota, Kecamatan, kodePos, Alamat,
+) {
+  const newShipping = new shipping({
+    NamaPenerima: NamaPenerima,
+    nomorTelp: nomorTelp,
+    Provinsi: Provinsi,
+    Kota: Kota,
+    Kecamatan: Kecamatan,
+    kodePos: kodePos,
+    Alamat: Alamat,
+    //tag: tag ,
+    //payment: payment,
+  });
+
+  return newShipping.save();
 }
 
 async function findByEmail(email) {
@@ -44,7 +66,8 @@ async function findById(id) {
 }
 
 module.exports = {
-  create,
+  createUser,
+  createShipping,
   findByEmail,
   login,
   generateToken,
