@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
 const Users = require('./user');
+const shipping = require('./shipping');
 
 mongoose.connect(
-  'mongodb+srv://Roberto:Roberto19@cluster0.tlyg1u3.mongodb.net/?retryWrites=true&w=majority'
-  );
+'mongodb://Dionathan:Dionathan@ac-w9ggdwl-shard-00-00.7rchlft.mongodb.net:27017,ac-w9ggdwl-shard-00-01.7rchlft.mongodb.net:27017,ac-w9ggdwl-shard-00-02.7rchlft.mongodb.net:27017/?ssl=true&replicaSet=atlas-ng3ied-shard-0&authSource=admin&retryWrites=true&w=majority'
+);
 
 const db = mongoose.connection;
 db.once('open', () => {
@@ -14,4 +15,5 @@ db.once('open', () => {
 module.exports = {
   db,
   Users,
+  shipping,
 };
