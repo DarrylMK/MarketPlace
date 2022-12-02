@@ -35,6 +35,8 @@ module.exports = (app) => {
         await userController.create(
           req.body.email,
           req.body.full_name,
+          req.body.user_name,
+          req.body.phone_no,
           req.body.password,
         );
 

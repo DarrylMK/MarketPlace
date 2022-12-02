@@ -5,11 +5,13 @@ const config = require('../../../core/config')
 const { Users } = require('../../../models')
 const { hashPassword, comparePassword } = require('../../../helpers/crypto')
 
-async function create(email, fullName, password) {
+async function create(email, fullName, userName, phoneNo, password) {
   const hashedPassword = await hashPassword(password);
   const newUser = new Users({
     email,
     full_name: fullName,
+    user_name: userName,
+    phone_no: phoneNo,
     password: hashedPassword,
   });
 

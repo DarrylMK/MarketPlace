@@ -25,27 +25,27 @@
 
     <div id="signup" class="container close">
         <div class="title">Sign-Up!</div>
-        <form id="form" action="#">
+        <form id="form" action="api/auth/register" method="post">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
-                    <input type="text" class="name" placeholder="Enter your name" required>
+                    <input type="text" class="name" placeholder="Enter your name" id="full_name" required name="full_name">
                 </div>
                 <div class="input-box">
                     <span class="details">Username</span>
-                    <input type="text" class="username" placeholder="Enter your username" required>
+                    <input type="text" class="username" placeholder="Enter your username" id="user_name" required name="user_name">
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="text" class="email" id="email" placeholder="Enter your email" onkeydown="emailValidation()" required>
+                    <input type="text" class="email" id="email" placeholder="Enter your email" onkeydown="emailValidation()" required name="email">
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="text" class="no" placeholder="Enter your phone number" required>
+                    <input type="text" class="no" placeholder="Enter your phone number" id="phone_no" required name="phone_no">
                 </div>
                 <div class="input-box" style="position: relative">
                     <span class="details">Password</span>
-                    <input class="password" type="password" id="createPw" placeholder="Enter your password" required>
+                    <input class="password" type="password" id="createPw" placeholder="Enter your password" required name="password">
                 </div>
                 <div class="input-box" style="position: relative">
                     <span class="details">Confirm Password</span>
@@ -56,7 +56,7 @@
                     <small id="errorPw" style="position: absolute; display: flex"></small>
                 </div>
             </div>
-            <div class="gender-details">
+            <!-- <div class="gender-details">
                 <input type="radio">
                 <input type="radio" name="gender" id="dot-1">
                 <input type="radio" name="gender" id="dot-2">
@@ -76,7 +76,7 @@
                         <span class="gender">Prefer not to say</span>
                     </label>
                 </div>
-            </div>
+            </div> -->
             <div class="button">
                 <input type="submit" value="Register">
             </div>
@@ -89,8 +89,8 @@
         <form action="#">
             <div class="user-details">
                 <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username" required>
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box" style="position: relative">
                     <span class="details">Password</span>
