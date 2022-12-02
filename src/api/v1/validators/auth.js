@@ -17,4 +17,16 @@ module.exports = {
       password: joi.string().required(),
     },
   },
+
+  Shipping: {
+    body: {
+      NamaPenerima: joi.string().min(1).max(32).required(),
+      nomorTelp: joi.string().min(1).max(32).required(),
+      Provinsi: joi.string().min(1).max(32).required(),
+      Kota: joi.string().min(1).max(32).required(),
+      Kecamatan: joi.string().min(1).max(32).required(),
+      kodePos: joi.string().min(1).max(32),
+      Alamat: joi.string().min(1).max(32).required(),
+    }
+  }
 };
