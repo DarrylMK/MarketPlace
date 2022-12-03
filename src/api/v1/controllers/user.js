@@ -43,10 +43,10 @@ async function createShipping(
 }
 
 async function createReset(
-  email
+  resetEmail
 ) {
   const newReset = new Reset({
-    email,
+    resetEmail,
   });
 
   return newReset.save();
