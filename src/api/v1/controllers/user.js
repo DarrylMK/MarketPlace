@@ -42,6 +42,16 @@ async function createShipping(
   return newShipping.save();
 }
 
+async function createReset(
+  resetEmail
+) {
+  const newReset = new Reset({
+    resetEmail,
+  });
+
+  return newReset.save();
+}
+
 async function findByEmail(email) {
   return Users.findOne({ email }).exec();
 };
