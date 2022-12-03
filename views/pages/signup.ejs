@@ -86,7 +86,7 @@
 
     <div id="signin" class="container">
         <div class="title">Sign-In!</div>
-        <form action="#">
+        <form action="api/auth/login" method="post">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Email</span>
@@ -149,23 +149,23 @@
         }
 
         /* Password Validation */
-        document.querySelector('.button').onclick = function () {
-            message.textContent = "";
-            if ((name.value != "") && (userName.value != "") && (eMail.value != "") && (number.value != "")
-                && (createPw.value != "") && (confirmPw.value != "")) {
-                if (createPw.value.length != 0) {
-                    if (createPw.value == confirmPw.value) {
-                        alert("Your account has successfully been created!")
-                        changeContainer();
-                    }
-                    else {
-                        message.textContent = "Passwords don't match!";
-                        message.style.color = "ff4d4d";
-                        alert("Passwords don't match, account creation failed. Please recheck if there's any mistakes.")
-                    }
-                }
+        confirmPw.addEventListener("input", () => {
+            if (confirmPw.value != createPw.value) {
+                message.textContent = "Passwords don't match!";
+                message.style.color = "ff4d4d";
+            } else {
+                message.textContent = "";
             }
-        }
+        })
+
+        createPw.addEventListener("input", () => {
+            if (confirmPw.value != createPw.value) {
+                message.textContent = "Passwords don't match!";
+                message.style.color = "ff4d4d";
+            } else {
+                message.textContent = "";
+            }
+        })
 
         /* Reveals and hides password by clicking on the eye icon */
         showPass.addEventListener("click", () => {
