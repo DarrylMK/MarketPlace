@@ -74,30 +74,45 @@ module.exports = (app) => {
       }
     },
   );
-  
 
   route.post(
     '/shipping',
     async (req, res, next) => {
       try {
-          await userController.createShipping(
-            req.body.NamaPenerima,
-            req.body.nomorTelp,
-            req.body.Provinsi,
-            req.body.Kota,
-            req.body.Kecamatan,
-            req.body.kodePos,
-            req.body.Alamat,
-            //req.body.tag,
-            //req.body.payment,
-          );
-          return res.json({
-            status:'OK!',
-          }).status(300);
-        } 
-          catch (err) {
-          return next(err);
-        }
-      },
-    )
+        await userController.createShipping(
+          req.body.NamaPenerima,
+          req.body.nomorTelp,
+          req.body.Provinsi,
+          req.body.Kota,
+          req.body.Kecamatan,
+          req.body.kodePos,
+          req.body.Alamat,
+          //req.body.tag,
+          //req.body.payment,
+        );
+        return res.json({
+          status: 'OK!',
+        }).status(300);
+      }
+      catch (err) {
+        return next(err);
+      }
+    },
+  )
+  route.post(
+    '/reset',
+    async (req, res, next) => {
+      try {
+        await userController.createReset(
+          req.body.resetEmail,
+        );
+        return res.json({
+          status: 'OK!',
+        }).status(200);
+      }
+      catch (err) {
+        return next(err);
+      }
+    },
+  )
 };
