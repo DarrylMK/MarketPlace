@@ -39,9 +39,8 @@ module.exports = (app) => {
           req.body.phone_no,
           req.body.password,
         );
-
         return res.json({
-          status: 'OK',
+          message: "your account has been created",
         }).status(200);
       } catch (err) {
         return next(err);
@@ -64,11 +63,12 @@ module.exports = (app) => {
         }
 
         const token = await userController.generateToken(user.id);
-        return res.json({
-          email: user.email,
-          full_name: user.full_name,
-          token,
-        }).status(200);
+        // return res.json({
+        //   email: user.email,
+        //   full_name: user.full_name,
+        //   token,
+        // }).status(200);
+        res.redirect('/index')
       } catch (err) {
         return next(err);
       }
