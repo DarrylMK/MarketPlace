@@ -40,7 +40,7 @@ module.exports = (app) => {
           req.body.password,
         );
         return res.json({
-          message: "your account has been created",
+          message: "Your account has been successfully created!",
         }).status(200);
       } catch (err) {
         return next(err);
@@ -92,7 +92,7 @@ module.exports = (app) => {
           //req.body.payment,
         );
         return res.json({
-          status: 'OK!',
+          message: "Your purchase has been received!",
         }).status(300);
       }
       catch (err) {
@@ -109,7 +109,7 @@ module.exports = (app) => {
           req.body.resetEmail,
         );
         return res.json({
-          status: 'OK!',
+          message: "Your request has been received!",
         }).status(200);
       }
       catch (err) {
