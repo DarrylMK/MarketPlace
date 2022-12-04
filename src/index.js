@@ -55,19 +55,6 @@ app.get('/signup', async(req, res) =>{
   res.render ('pages/signup')
 })
 
-// app,post('/signup', async(req, res) =>{
-//   var fullname = req.body.full_name;
-//   var email = req.body.email;
-//   var password = req.body.password;
-
-//   var data = {
-//     "name": fullname,
-//     "email": email,
-//     "phno": phno,
-//     "password": password
-//   }
-// })
-
 app.get('/help', async(req, res) =>{
   res.render ('pages/help')
 })
