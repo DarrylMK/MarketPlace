@@ -27,6 +27,12 @@ module.exports = {
       Kecamatan: joi.string().min(1).max(32).required(),
       kodePos: joi.string().min(1).max(32),
       Alamat: joi.string().min(1).max(32).required(),
-    }
-  }
+    },
+  },
+
+  reset: {
+    body: {
+      resetEmail: joi.string().email().required(),
+    },
+  },
 };
