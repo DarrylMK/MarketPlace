@@ -2,9 +2,10 @@ const mongoose = require('mongoose');
 
 const Users = require('./user');
 const shipping = require('./shipping');
+const Reset = require('./reset');
 
 mongoose.connect(
-'mongodb+srv://darryl:darryl@cluster0.pvv1bmd.mongodb.net/?retryWrites=true&w=majority'
+'mongodb+srv://Roberto:Roberto19@cluster0.tlyg1u3.mongodb.net/?retryWrites=true&w=majority'
 );
 
 const db = mongoose.connection;
@@ -16,4 +17,5 @@ module.exports = {
   db,
   Users,
   shipping,
+  Reset,
 };
