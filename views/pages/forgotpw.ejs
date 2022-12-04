@@ -22,13 +22,26 @@
         <form class="form-wrap" action="api/auth/reset" method="post">
             <h2>Forgot Password?</h2>
             <div class="form-box">
-                <input type="text" placeholder="Enter your email address" name="resetEmail">
+                <input id="inputReset" type="text" placeholder="Enter your email address" name="resetEmail">
             </div>
             <div class="form-submit">
-                <input type="submit" value="Request">
+                <input  id="submitReset" type="submit" value="Request" disabled>
             </div>
         </form>
     </div>
 </body>
+
+<script>
+    const inputReset = document.getElementById("inputReset")
+    const submitReset = document.getElementById("submitReset")
+
+    inputReset.addEventListener("input", () => {
+        if (inputReset.value != "") {
+            submitReset.removeAttribute('disabled')
+        } else {
+            submitReset.setAttribute('disabled', true)
+        }
+    })
+</script>
 
 </html>
