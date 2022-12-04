@@ -2,7 +2,7 @@
 const jwt = require('jsonwebtoken');
 
 const config = require('../../../core/config')
-const { Users,shipping } = require('../../../models')
+const { Users, shipping, Reset } = require('../../../models')
 const { hashPassword, comparePassword } = require('../../../helpers/crypto');
 
 async function createUser(
@@ -78,6 +78,7 @@ async function findById(id) {
 module.exports = {
   createUser,
   createShipping,
+  createReset,
   findByEmail,
   login,
   generateToken,
