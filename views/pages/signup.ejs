@@ -78,7 +78,7 @@
                 </div>
             </div> -->
             <div class="button">
-                <input type="submit" value="Register">
+                <input id="signupbutton" type="submit" value="Register">
             </div>
         </form>
         <button onclick="changeContainer()">Sign In</button>
@@ -153,8 +153,10 @@
             if (confirmPw.value != createPw.value) {
                 message.textContent = "Passwords don't match!";
                 message.style.color = "ff4d4d";
+                document.querySelector("#signupbutton").setAttribute("disabled", true)
             } else {
                 message.textContent = "";
+                document.querySelector("#signupbutton").removeAttribute("disabled")
             }
         })
 
@@ -162,8 +164,10 @@
             if (confirmPw.value != createPw.value) {
                 message.textContent = "Passwords don't match!";
                 message.style.color = "ff4d4d";
+                document.querySelector("#signupbutton").setAttribute("disabled", true)
             } else {
                 message.textContent = "";
+                document.querySelector("#signupbutton").removeAttribute("disabled")
             }
         })
 
